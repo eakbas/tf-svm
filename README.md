@@ -17,6 +17,11 @@ The first part of the cost function, i.e. the regularization part, is
 implemented by the `regularization_loss` expression, and the second part is
 implemented by the `hinge_loss` expression in the code. 
 
+Run the code using
+
+`python linear_svm.py --train linearly_separable_data.csv --svmC 1 --verbose
+True --num_epochs 10`
+
 On a linearly separable, 2D data, the code gives the following decision
 boundary: 
 

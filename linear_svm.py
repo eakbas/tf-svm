@@ -75,8 +75,8 @@ def main(argv=None):
 
     # Optimization.
     regularization_loss = 0.5*tf.reduce_sum(tf.square(W)) 
-    hinge_loss = tf.reduce_sum(tf.maximum(tf.zeros([BATCH_SIZE,1]), 
-        1 - y*y_raw));
+    hinge_loss = tf.reduce_sum(tf.square(tf.maximum(tf.zeros([BATCH_SIZE,1]), 
+        1 - y*y_raw)));
     svm_loss = regularization_loss + svmC*hinge_loss;
     train_step = tf.train.GradientDescentOptimizer(0.01).minimize(svm_loss)
 

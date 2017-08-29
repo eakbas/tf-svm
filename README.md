@@ -2,7 +2,7 @@ Tensorflow Linear SVM
 ===
 
 A demonstration of how you can use [TensorFlow](http://www.tensorflow.org/) to
-implement a L2-norm support vector machine (SVM) in primal form. 
+implement a standard L2-regularized support vector machine (SVM) in primal form. 
 
 `linear_svm.py` optimizes the following SVM cost using gradient descent: 
 
